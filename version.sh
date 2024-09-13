@@ -1,4 +1,4 @@
-version="1.0.2"
+version="1.1.0"
 name="captchaplugin"
 remote_tag=simplifierag/${name}:${version}
 echo "***** building:" ${name}:${version}
