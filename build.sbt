@@ -18,7 +18,7 @@ lazy val root = (project in file("."))
         oldStrategy(x)
     },
     libraryDependencies ++= Seq(
-      "io.github.simplifier-ag" %% "simplifier-plugin-base" % "1.0.0" withSources(),
+      "io.github.simplifier-ag" %% "simplifier-plugin-base" % "1.0.2" withSources(),
       "com.github.penggle" % "kaptcha" % "2.3.2" withSources() withJavadoc(),
       "org.scalatest" %% "scalatest" % "3.1.4" % "test" withSources() withJavadoc(),
     )
