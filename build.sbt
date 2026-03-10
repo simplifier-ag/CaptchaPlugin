@@ -1,10 +1,11 @@
 
 ThisBuild / organization := "io.simplifier"
 ThisBuild / version := sys.env.get("VERSION").getOrElse("NA")
-ThisBuild / scalaVersion := "2.12.15"
+ThisBuild / scalaVersion := "2.12.20"
 
 ThisBuild / useCoursier := true
 
+ThisBuild / libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always
 
 lazy val root = (project in file("."))
   .settings(
@@ -18,7 +19,7 @@ lazy val root = (project in file("."))
         oldStrategy(x)
     },
     libraryDependencies ++= Seq(
-      "io.github.simplifier-ag" %% "simplifier-plugin-base" % "1.0.3" withSources(),
+      "io.github.simplifier-ag" %% "simplifier-plugin-base" % "1.0.4" withSources(),
       "com.github.penggle" % "kaptcha" % "2.3.2" withSources() withJavadoc(),
       "org.scalatest" %% "scalatest" % "3.1.4" % "test" withSources() withJavadoc(),
     )
